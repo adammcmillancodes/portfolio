@@ -1,0 +1,374 @@
+@import "partials/setup";
+@import "partials/header";
+
+
+.about {
+	padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    line-height: 1.8;
+    .aboutBio {
+    	width: 30%;
+    	h4 {
+    		font-size: 1.8rem;
+    	}
+    }
+    .aboutSecondary {
+    	width: 65%;
+    	position: relative;
+    	.headshotMain {
+    		width: 350px;
+    		background-image: url("../../Assets/PAM_8409 2_edited.jpg");
+    		height: 400px;
+    		background-size: cover;
+    		background-repeat: no-repeat;
+    		background-position: center top;
+    	}
+    	.box1 {
+    		background: lightseagreen;
+    		width: 260px;
+    		height: 290px;
+    		z-index: -99;
+    		position: absolute;
+    		bottom: 4%;
+    		left: 40%;
+    	}
+    	.box2 {
+    		position: absolute;
+    		width: 260px;
+    		height: 290px;
+    		background: #909090;
+    		bottom: 0%;
+    		right: -20%;
+    		z-index: -9;
+    	}
+    }
+}
+.carousel {
+	background: #4c4c4c;
+	margin: 100px 0;
+}
+
+.skillsBanner {
+	position: relative;
+}
+
+.skillsBanner::before, .skillsBanner::after {
+	content: '';
+	width: 3px;
+	height: 90%;
+	position: absolute;
+	top: 10px;
+	background: lightseagreen;
+	z-index: 99;
+}
+
+.skillsBanner::before {
+	left: 2%;
+}
+
+.skillsBanner::after {
+	right: 2%;
+}
+
+.skillsBanner .carousel {
+	padding: 0 2%;
+}
+
+
+
+.flickity-viewport {
+	height: 100%;
+}
+
+.carousel-cell svg {
+	width: 110px;
+	margin: 40px;
+	path {
+		fill: #FFF;
+	}
+}
+
+#cssPath__one {
+	fill: #c1bfbf;
+}
+
+#cssPath__two {
+	fill: #FFF;
+}
+
+#cssPath__three, #cssPath__four, #cssPath__five, #cssPath__six, #firebasePath__one, #firebasePath__three {
+	fill: #4c4c4c;
+}
+
+// THIS IS THE END OF THE SKILLS CAROUSEL!!!//
+
+//THIS IS THE BEGINNING OF THE PORTFOLIO SECTION!!!!//
+
+.works {
+	display: flex;
+    flex-direction: column;
+}
+
+.sectionTitle {
+	width: 23%;
+	p {
+		text-align: right;
+		position: relative;
+	}
+	p:after {
+		content: '';
+		width: 115%;
+		height: 3px;
+		background: black;
+		position: absolute;
+		bottom: -67.5%;
+		right: 0;
+	}
+	h3 {
+		text-transform: uppercase;
+	}
+
+}
+
+.worksContainer {
+	display: flex;
+    flex-direction: column;
+}
+
+.worksPiece {
+	display: flex;
+	margin: 20px 10px;
+}
+
+.worksPiece__description {
+	width: 50%;
+	text-align: right;
+	padding: 60px 0px;
+	line-height: 1.5;
+	position: relative;
+}
+
+.description__odd:before, .description__even:before {
+	content: '';
+	background: black;
+	height: 2px;
+	width: 20rem;
+	position: absolute;
+}
+.description__odd:before {
+	top: 20%;
+	left: 76%;
+}
+.description__even:before {
+	top: 20%;
+	right: 76%;
+}
+.worksPiece2, .worksPiece4 {
+	flex-direction: row-reverse;
+	.worksPiece__description {
+		text-align: left;
+		.workPiece__decription h4:before{
+			right: 75%;
+		}
+	}
+}
+.worksPiece__preview {
+	width: 50%;
+	img {
+		width: 350px;
+		height: 320px;
+		background: cadetblue;
+		float: right;
+	}
+}
+.worksPiece2, .worksPiece4 {
+	.worksPiece__preview img {
+		float: left;
+	}
+}
+
+// END OF PORTFOLIO SECTION!!!!//
+
+// BEGINNING OF QUOTE SECTION!!
+#quoteCarousel {
+	height: 200px;
+}
+
+.quotecell {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+}
+
+.quote{
+	width: 40%;
+	letter-spacing: 1.8px;
+	font-weight: 400;
+	font-size: 2rem;
+	line-height: 2;
+	// padding: 1%;
+	font-family: 'Open Sans', sans-serif;
+}
+.author {
+	position: relative;
+	letter-spacing: 2px;
+	padding: 6%;
+}
+
+.author span {
+	border-bottom: 1px solid white;
+}
+
+.author:after {
+	content: '\f0ac';
+	font-family: fontAwesome;
+	// width: 50px;
+	// height: 50px;
+	color: grey;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 10rem;
+	z-index: -1;
+}
+
+.quoteWrap {
+	position: relative;
+}
+
+.quoteWrap::before, .quoteWrap::after {
+	content: '';
+	width: 3px;
+	height: 90%;
+	position: absolute;
+	top: 10px;
+	background: lightseagreen;
+	z-index: 99;
+}
+
+.quoteWrap::before {
+	left: 2%;
+}
+
+.quoteWrap::after {
+	right: 2%;
+}
+
+// !!END OF QUOTE SECTION!!//
+
+// !!BEGINNING OF CONTACT SECTION!!//
+
+.contact {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin-bottom: 100px;
+}
+.contactHeader {
+	padding-left: 10px;
+}
+.contactContent {
+	width: 50%;
+}
+form {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.map {
+	width: 50%;
+}
+iframe {
+	max-width: 100%;
+	float: right;
+}
+
+.inputWrap {
+	width: 45%;
+	display:flex;
+	flex-direction: column;
+	margin: 1% 2%;
+	label {
+
+	}
+	input, textarea {
+		width: 100%;
+		border: none;
+		border-bottom: 2px solid black;
+		font-size: 1.8rem;
+	}
+}
+
+.messageBody {
+	width: 100%;
+}
+// !!END OF CONTACT SECTION!!//
+
+// !!BEGINNING OF FOOTER!!//
+footer {
+	background: #4c4c4c;
+	padding: 35px 0;
+}
+
+.footerContent {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	color: grey;
+}
+.address {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	h5 {
+		color: white;
+		font-weight: 100;
+		span {
+			border-top: 2px solid lightseagreen; 
+			padding-top: 20px;
+		}
+
+	}
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.footerNav {
+	display: flex;
+	flex-direction: row;
+	width: 40%;
+	align-self: flex-end;
+	justify-content: space-between;
+	a {
+		text-decoration: none;
+		color: white;
+		padding: 0;
+		font-size: 1.6rem;
+		font-weight: 100;
+	}
+}
+
+.footerSocial {
+	width: 27%;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    a {
+		color: black;
+		font-size: 1.6rem;	
+		margin: 0 20px;
+    }
+}
+
+// !!END OF FOOTER!!//

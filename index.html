@@ -3,14 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Adam McMillan.</title>
-	<link rel="stylesheet" href="./styles/style.css">
+	<link rel="stylesheet" href="public/styles/style.css">
 	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400i|Roboto:300,500" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <!--*** BEGIN OF HEADER SECTION  ***-->
-	<header>
+	<header class="wideWrap" id="home">
 		<nav>
 			<div class="social">
 				<p>Adam McMillan</p>
@@ -25,30 +26,30 @@
 			<!-- use css counter to add numbers of each nav item -->
 				<ul>
 					<l1>
-						<a href="#">Home</a>
+						<a href="#home">Home</a>
 					</l1>
 
 					<l1>
-						<a href="#">About</a>
+						<a href="#about">About</a>
 					</l1>
 
 					<l1>
-						<a href="#">Skills</a
+						<a href="#skills">Skills</a
 					></l1
 					>
 					<l1>
-						<a href="#">Works</a>
+						<a href="#works">Works</a>
 					</l1>
 
 					<l1>
-						<a href="#">Contact</a>
+						<a href="#contact">Contact</a>
 					</l1>
 				</ul>
 			</div>
 		</nav>
 		<div class="heroContainer">
-			<h2>Adam McMillan</h2>
-			<h1>Front End Web Developer</h1>
+			<h2>Adam Robertson McMillan</h2>
+			<h1>Front End <span>Web Developer</span></h1>
 		</div>		
 	</header>
 <!--*** END OF HEADER SECTION  ***-->
@@ -56,18 +57,19 @@
 <!--*** BEGIN OF MAIN CONTENT  ***-->
 	<main>
 		<!-- **beginning of about me section** -->
-		<section> 
+		<section id="about"> 
 			<div class="wrapper">
 				<div class="about">
 					<div class="aboutBio">
-						<h4>Time to learn about the Internation Man of Mystery</h4>
+						<h4>Now let me welcome everbody to the wild wild west</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur alias ab ut, possimus repellendus fugiat in soluta provident, illum labore laudantium adipisci eligendi. Saepe laborum quas placeat corrupti excepturi ut!</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, enim, fugiat. Natus libero odio dignissimos, inventore impedit ducimus, voluptatibus ipsum. Illum, neque, molestiae.</p>
 					</div>
 					<div class="aboutSecondary">
-						<div class="headshots">
-							<img src="Assets/PAM_8409 2_edited.jpg" alt="A young handsome man sitting in a maroon shirt sitting in a red chair">
-							<img src="Assets/headshot3.JPG" alt="A young handsome man sits in a restaurant, sporting an incredible mustache.">
+						<div class="headshot">
+							<div class="headshotMain"></div>
+							<div class="box1"></div>
+							<div class="box2"></div>
 						</div>
 						<div class="caption">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia reprehenderit autem ipsum neque incidunt repellendus, illo assumenda ab ex cumque, aspernatur rerum inventore nisi fugit sed, alias ut culpa qui!</p>
@@ -79,11 +81,11 @@
 		<!-- **end of about me section** -->
 
 		<!-- **beginning of skills section** -->
-		<section class="skillsBanner">
-			<div class="carousel" data-flickity='{ "autoPlay": true }'>
+		<section class="skillsBanner wideWrap" id="skills">
+			<div class="carousel" data-flickity='{ "autoPlay": true, "cellAlign": "left", "wrapAround": true, "prevNextButtons": false, "pageDots": false }'>
 			  <div class="carousel-cell" id="css_svg">
 			  	<svg viewBox="0 0 128 128">
-			  	<path fill="#1572B6" d="M18.814 114.123l-10.054-112.771h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"></path><path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"></path><path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163h-19.566v-13.831h34.681999999999995l-.332 3.711-3.4 38.114h-30.95v-13.831z"></path><path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031h-13.882l1.937 21.717 28.331 7.863.063-.018v-14.39z"></path><path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881h-13.876z"></path><path fill="#EBEBEB" d="M64.048 23.435v13.831000000000001h-33.407999999999994l-.277-3.108-.63-7.012-.331-3.711h34.646zM64.001 51.431v13.831000000000001h-15.209l-.277-3.108-.631-7.012-.33-3.711h16.447z"></path>
+			  	<path id="cssPath__one" fill="#c1bfbf" d="M18.814 114.123l-10.054-112.771h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"></path><path id="cssPath__two" fill="#FFF" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"></path><path id="cssPath__three" fill="rgba(0, 0, 0, 0.7)" d="M64.001 51.429h18.302l1.264-14.163h-19.566v-13.831h34.681999999999995l-.332 3.711-3.4 38.114h-30.95v-13.831z"></path><path id="cssPath__four" fill="rgba(0, 0, 0, 0.7)" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031h-13.882l1.937 21.717 28.331 7.863.063-.018v-14.39z"></path><path id="cssPath__five" fill="rgba(0, 0, 0, 0.7)" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881h-13.876z"></path><path id="cssPath__six" fill="rgba(0, 0, 0, 0.7)" d="M64.048 23.435v13.831000000000001h-33.407999999999994l-.277-3.108-.63-7.012-.331-3.711h34.646zM64.001 51.431v13.831000000000001h-15.209l-.277-3.108-.631-7.012-.33-3.711h16.447z"></path>
 			  	</svg>
 			  </div>
 			  <div class="carousel-cell" id="github_svg">
@@ -98,7 +100,7 @@
 			  </div>
 			  <div class="carousel-cell" id="js_svg">
 			  	<svg viewBox="0 0 128 128">
-			  	<path fill="#F0DB4F" d="M2 1v125h125v-125h-125zm66.119 106.513c-1.845 3.749-5.367 6.212-9.448 7.401-6.271 1.44-12.269.619-16.731-2.059-2.986-1.832-5.318-4.652-6.901-7.901l9.52-5.83c.083.035.333.487.667 1.071 1.214 2.034 2.261 3.474 4.319 4.485 2.022.69 6.461 1.131 8.175-2.427 1.047-1.81.714-7.628.714-14.065-.001-10.115.046-20.188.046-30.188h11.709c0 11 .06 21.418 0 32.152.025 6.58.596 12.446-2.07 17.361zm48.574-3.308c-4.07 13.922-26.762 14.374-35.83 5.176-1.916-2.165-3.117-3.296-4.26-5.795 4.819-2.772 4.819-2.772 9.508-5.485 2.547 3.915 4.902 6.068 9.139 6.949 5.748.702 11.531-1.273 10.234-7.378-1.333-4.986-11.77-6.199-18.873-11.531-7.211-4.843-8.901-16.611-2.975-23.335 1.975-2.487 5.343-4.343 8.877-5.235l3.688-.477c7.081-.143 11.507 1.727 14.756 5.355.904.916 1.642 1.904 3.022 4.045-3.772 2.404-3.76 2.381-9.163 5.879-1.154-2.486-3.069-4.046-5.093-4.724-3.142-.952-7.104.083-7.926 3.403-.285 1.023-.226 1.975.227 3.665 1.273 2.903 5.545 4.165 9.377 5.926 11.031 4.474 14.756 9.271 15.672 14.981.882 4.916-.213 8.105-.38 8.581z"></path>
+			  	<path fill="#FFF" d="M2 1v125h125v-125h-125zm66.119 106.513c-1.845 3.749-5.367 6.212-9.448 7.401-6.271 1.44-12.269.619-16.731-2.059-2.986-1.832-5.318-4.652-6.901-7.901l9.52-5.83c.083.035.333.487.667 1.071 1.214 2.034 2.261 3.474 4.319 4.485 2.022.69 6.461 1.131 8.175-2.427 1.047-1.81.714-7.628.714-14.065-.001-10.115.046-20.188.046-30.188h11.709c0 11 .06 21.418 0 32.152.025 6.58.596 12.446-2.07 17.361zm48.574-3.308c-4.07 13.922-26.762 14.374-35.83 5.176-1.916-2.165-3.117-3.296-4.26-5.795 4.819-2.772 4.819-2.772 9.508-5.485 2.547 3.915 4.902 6.068 9.139 6.949 5.748.702 11.531-1.273 10.234-7.378-1.333-4.986-11.77-6.199-18.873-11.531-7.211-4.843-8.901-16.611-2.975-23.335 1.975-2.487 5.343-4.343 8.877-5.235l3.688-.477c7.081-.143 11.507 1.727 14.756 5.355.904.916 1.642 1.904 3.022 4.045-3.772 2.404-3.76 2.381-9.163 5.879-1.154-2.486-3.069-4.046-5.093-4.724-3.142-.952-7.104.083-7.926 3.403-.285 1.023-.226 1.975.227 3.665 1.273 2.903 5.545 4.165 9.377 5.926 11.031 4.474 14.756 9.271 15.672 14.981.882 4.916-.213 8.105-.38 8.581z"></path>
 			  	</svg>
 			  </div>
 			  <div class="carousel-cell" id="jquery_svg">
@@ -122,24 +124,31 @@
 			  	</svg>
 			  </div>
 			  <div class="carousel-cell" id="firebase_svg">
-			  	<img src="Assets/1490314989_google_firebase.svg" alt="firebase logo">
+			  	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-11.5 0 40 40" enable-background="new -11.5 0 40 40" xml:space="preserve">
+			  	<g id="firebase">
+			  		<path id="firebasePath__one" d="M12.88,14.449l-4.005,3.724l-3.713-7.494l1.921-4.308c0.486-0.865,1.279-0.867,1.768,0L12.88,14.449z"/>
+			  		<path d="M17.401,8.752c0.716-0.686,1.457-0.453,1.645,0.52l3.895,22.633l-12.909,7.738c-0.451,0.25-1.648,0.355-1.648,0.355
+			  			s-1.092-0.131-1.507-0.359L-5.94,32.093L17.401,8.752z"/>
+			  		<path id="firebasePath__three" d="M5.306,10.679L-5.94,32.093l5.008-31.295c0.186-0.975,0.738-1.068,1.234-0.208L5.306,10.679z"/>
+			  	</g>
+			  	</svg>
 			  </div>
 			</div>
 		</section>
 		<!-- **end of skills section** -->
 
 		<!--*** beginning of portfolio section  ***-->
-		<section>
+		<section id="works">
 			<div class="wrapper">
 				<div class="works">
 					<div class="sectionTitle">
-						<p>Latest work</p>
-						<h3>Portfolio</h3>
+						<p>Take a look</p>
+						<h3>Work I've Done</h3>
 					</div>
 					<div class="worksContainer">
 						<div class="worksPiece worksPiece1">
 							<div class="worksPiece__description">
-								<h4>Responsive Web Design</h4>
+								<h4 class="description__odd">Responsive Web Design</h4>
 								<p>Client-based project developing a one-page fully responsive website, with a PSD for reference. OBVS EDIT THIS!!!</p>
 								<p>HTML & CSS/SASS</p>
 							</div>
@@ -149,7 +158,7 @@
 						</div>
 						<div class="worksPiece worksPiece2">
 							<div class="worksPiece__description">
-								<h4>Makeup App</h4>
+								<h4 class="description__even">Makeup App</h4>
 								<p>Using an ajax request, this app allows you to watch a make-up tutorial video and view products used and add them to your basket, for budgeting purposes. App co-developed with Ben Tran and Ellen Probst.</p>
 								<p>HTML, CSS/SASS, jQuery, Javascript, Gulp, Github</p>
 							</div>
@@ -159,7 +168,7 @@
 						</div>
 						<div class="worksPiece worksPiece3">
 							<div class="worksPiece__description">
-								<h4>Task Master</h4>
+								<h4 class="description__odd">Task Master</h4>
 								<p>Using React.js and Firebase, this app allows users to create an account to store task lists and keep track of to-do's. Once an account is created, users may sign in from any device and have access to their personal tasks.</p>
 								<p>HTML, CSS/SASS, React, JavaScript, jQuery, Firebase</p>
 							</div>
@@ -169,8 +178,18 @@
 						</div>
 						<div class="worksPiece worksPiece4">
 							<div class="worksPiece__description">
-								<h4>New Nerd, Who Dis?</h4>
+								<h4 class="description__even">New Nerd, Who Dis?</h4>
 								<p>Using ajax calls to retrieve data from the ComicVine API, users can search any DC or Marvel character to get a picture, brief description and first appearance of their inquiry.</p>
+								<p>HTML, CSS/SASS, JavaScript, jQuery</p>
+							</div>
+							<div class="worksPiece__preview">
+								<img src="" alt="">
+							</div>
+						</div>
+						<div class="worksPiece worksPiece5">
+							<div class="worksPiece__description">
+								<h4 class="description__odd">Post Card Generator</h4>
+								<p>Using jQuery, this interactive app allows users to generate a custom postcard based on questions they've answered in a short survey. All content is generated using jQuery and is dynamically added to the screen. Co-developed with Ben Tran.</p>
 								<p>HTML, CSS/SASS, JavaScript, jQuery</p>
 							</div>
 							<div class="worksPiece__preview">
@@ -184,43 +203,70 @@
 		<!--*** end of portfolio section  ***-->
 
 		<!--*** beginning of quote section  ***-->
-		<section>
-			<div class="quoteWrap">
-				<p>enter the big ol quote here</p>
-				<p>credit author of quote here</p>
+		<section class="quoteWrap wideWrap">
+			<div class="carousel" data-flickity='{ "autoPlay": true, "cellAlign": "left", "wrapAround": true, "prevNextButtons": false, "pageDots": false }' id="quoteCarousel">
+				<div class="carousel-cell quotecell" id="quote1">
+					<p class="quote">“The trouble with opportunity is that it always comes disguised as hard work.” </p>
+					<p class="author">-Herbert V. <span>Prochnow</span></p>
+				</div>
+				<div class="carousel-cell quotecell" id="quote2">
+					<p class="quote">“Striving for success without hard work is like trying to harvest where you haven’t planted.”</p>
+					<p class="author">– David <span>Bly</span></p>
+				</div>
+				<div class="carousel-cell quotecell" id="quote3">
+					<p class="quote">“Hard work is a prison sentence only if it does not have meaning."</p>
+					<p class="author">-Malcolm <span>Gladwell</span></p>
+				</div>
+				<div class="carousel-cell quotecell" id="quote4">
+					<p class="quote">“Being a professional is doing the things you love to do, on the days you don't feel like doing them."</p>
+					<p class="author">-Julius <span>Erving</span></p>
+				</div>
 			</div>
 		</section>
 		<!--*** end of quote section  ***-->
 
 		<!--*** beginning of contact section  ***-->
-		<section>
+		<section class="wideWrap" id="contact">
 			<div class="contact">
 				<div class="contactContent">
 
-					<div class="contactHeader">
+					<div class="contactHeader sectionTitle">
 						<p>Get in Touch</p>
-						<h3>Send me a message</h3>
+						<h3>Send a message</h3>
 					</div>
 
 					<div class="contactForm">
 						<form action="">
-							<label for="fullName"> Full Name</label>
-							<input type="text" name="fullName">
-
-							<label for="email">Email Address</label>
-							<input type="text" name="email">
-
-							<label for="phone">Phone number</label>
-							<input type="text" name="phone">
-
-							<label for="website">Website(if any)</label>
-							<input type="text" name="website">
+							<div class="inputWrap">
+								<label for="fullName"> Full Name</label>
+								<input type="text" name="fullName">
+							</div>
+							
+							<div class="inputWrap">
+								<label for="email">Email Address</label>
+								<input type="text" name="email">
+							</div>	
+							
+							<div class="inputWrap">
+								<label for="phone">Phone number</label>
+								<input type="text" name="phone">
+							</div>
+							
+							<div class="inputWrap">
+								<label for="website">Website(if any)</label>
+								<input type="text" name="website">
+							</div>
+							<div class="inputWrap messageBody">
+								<label for="message">Message Body</label>
+								<textarea name="message" id="" cols="30" rows="10"></textarea>
+							</div>
+							
 						</form>
 					</div>
 				</div>
 
 				<div class="map">
-					<!-- **Don't forget to add a map** -->
+					<iframe src="//mapkit.io/embed/MEy0bi" frameborder="0" height="500" width="650"></iframe>
 				</div>
 			</div>
 		</section>
@@ -230,26 +276,25 @@
 <!--*** END OF MAIN CONTENT  ***-->
 
 <!--*** BEGIN OF FOOTER SECTION  ***-->
-	<footer>
+	<footer class="wideWrap">
 		<div class="wrapper">
 			<div class="footerContent">
 				<div class="address">
-					<h5>Adam McMillenial</h5>
+					<h5><span>Adam</span> McMillan</h5>
 					<p>Toronto, Ontario</p>
 					<p>adammcmillancodes@gmail.com</p>
-					<p>705-794-8544</p>
 				</div>
 				<div class="footerNav">
-					<h6>Jump to:</h6>
-					<a href="#">Home</a>
-					<a href="#">About</a>
-					<a href="#">Skills</a>
-					<a href="#">Works</a>
-					<a href="#">Contact Form</a>
+					<a href="#home">Home</a>
+					<a href="#about">About</a>
+					<a href="#skils">Skills</a>
+					<a href="#works">Works</a>
+					<a href="#contact">Contact Form</a>
 				</div>
-				<div class="emailMe">
-					<h6>Feel free to email me</h6>
-					<p>maybe?!?!</p>
+				<div class="footerSocial">
+					<a href="https://twitter.com/adammcmillan_"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="https://www.linkedin.com/in/adam-mcmillan-347823126/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					<a href="https://github.com/adammcmillancodes"><i class="fa fa-github" aria-hidden="true"></i></a>
 				</div>
 			</div>
 		</div>
